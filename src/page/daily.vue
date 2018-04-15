@@ -14,17 +14,17 @@
           <img v-if="imageUrl" :src="imageUrl" class="avatar">
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </el-upload>
-        <div style="width: 90%;text-align: center">封面图片</div>
+        <div style="width: 90%;text-align: center">封面圖片</div>
       </el-aside>
       <el-container>
         <el-form ref="form" style="width: 100%">
-          <el-input class="editTitle" v-model="title" placeholder="输入标题"></el-input>
+          <el-input class="editTitle" v-model="title" placeholder="輸入標題"></el-input>
           <quill-editor v-model="body"
                         ref="myQuillEditor"
                         :options="editorOption">
           </quill-editor>
           <el-form-item  style="text-align: right;width: 100%;margin-top: 45px;margin-bottom: 0px;">
-            <el-button size="medium" type="primary"  @click="addNews('form')">发  布</el-button>
+            <el-button size="medium" type="primary"  @click="addNews('form')">發  布</el-button>
           </el-form-item>
         </el-form>
       </el-container>
@@ -67,10 +67,10 @@
         const isJPG = file.type === 'image/jpeg';
         const isLt2M = file.size / 1024 / 1024 < 2;
         if (!isJPG) {
-          this.$message.error('上传文件图片只能是 JPG 格式!');
+          this.$message.error('上傳文件圖片只能是 JPG 格式!');
         }
         if (!isLt2M) {
-          this.$message.error('上传文件大小不能超过 2MB!');
+          this.$message.error('上傳文件大小不能超過 2MB!');
         }
         return isJPG && isLt2M;
       }

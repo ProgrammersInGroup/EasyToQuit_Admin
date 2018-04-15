@@ -26,14 +26,14 @@
         const option = {
           color: colors,
           title: {
-            text: '走势图',
+            text: '目前走勢圖',
             subtext: ''
           },
           tooltip: {
             trigger: 'axis'
           },
           legend: {
-            data:['新注册用户', '新增订单', '新增管理员']
+            data:['新病患數量']
           },
           toolbox: {
             show: true,
@@ -69,7 +69,7 @@
             },
             {
               type: 'value',
-              name: '订单',
+              name: '訂單',
               min: 0,
               max: 200,
               position: 'right',
@@ -85,37 +85,13 @@
           ],
           series: [
             {
-              name:'新注册用户',
+              name:'新病患數量',
               type:'line',
               data:[41,9,39,31,66,103,78],
               yAxisIndex: 1,
               markPoint: {
                 data: [
                   {type: 'max', name: '最大值',data:20,},
-                  {type: 'min', name: '最小值'}
-                ]
-              },
-            },
-            {
-              name:'新增订单',
-              type:'line',
-              data:[65,118,130,66,77,34,21],
-              yAxisIndex: 1,
-              markPoint: {
-                data: [
-                  {type: 'max', name: '最大值'},
-                  {type: 'min', name: '最小值'}
-                ]
-              },
-            },
-            {
-              name:'新增管理员',
-              type:'line',
-              data:[54,90,45,125,96,20,96],
-              yAxisIndex: 1,
-              markPoint: {
-                data: [
-                  {type: 'max', name: '最大值'},
                   {type: 'min', name: '最小值'}
                 ]
               },

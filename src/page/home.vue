@@ -2,16 +2,16 @@
   <div>
     <section class="data_section">
       <el-row :gutter="20" style="margin-bottom: 10px;">
-        <el-col :span="4"><div class="data_list today_head"><span class="data_num head">当日数据：</span></div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">8</span> 新增用户</div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">12</span> 新增订单</div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">9</span> 新增管理员</div></el-col>
+        <el-col :span="4"><div class="data_list today_head"><span class="data_num head">當日數據：</span></div></el-col>
+        <el-col :span="4"><div class="data_list" style="padding: 5px;"><span class="data_num">8</span> 新病患</div></el-col>
+        <!--<el-col :span="4"><div class="data_list"><span class="data_num">12</span> 新增订单</div></el-col>-->
+        <!--<el-col :span="4"><div class="data_list"><span class="data_num">9</span> 新增管理员</div></el-col>-->
       </el-row>
       <el-row :gutter="20">
-        <el-col :span="4"><div class="data_list all_head"><span class="data_num head">总数据：</span></div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">540</span> 注册用户</div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">335</span> 订单</div></el-col>
-        <el-col :span="4"><div class="data_list"><span class="data_num">22</span> 管理员</div></el-col>
+        <el-col :span="4"><div class="data_list all_head"><span class="data_num head">總數據：</span></div></el-col>
+        <el-col :span="4"><div class="data_list" style="padding:5px;"><span class="data_num">540</span> 總病患數量</div></el-col>
+        <!--<el-col :span="4"><div class="data_list"><span class="data_num">335</span> 订单</div></el-col>-->
+        <!--<el-col :span="4"><div class="data_list"><span class="data_num">22</span> 管理员</div></el-col>-->
       </el-row>
     </section>
     <Echarts></Echarts>

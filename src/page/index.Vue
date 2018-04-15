@@ -13,20 +13,21 @@
               @open="handleOpen"
               @close="handleClose"
               router>
-              <el-menu-item index="home"><i class="el-icon-menu"></i>首页</el-menu-item>
+              <el-menu-item index="home"><i class="el-icon-menu"></i>首頁</el-menu-item>
               <el-submenu index="2">
-                <template slot="title"><i class="el-icon-document"></i>数据管理</template>
-                <el-menu-item index="userList">用户列表</el-menu-item>
-                <el-menu-item index="daily">日报发布</el-menu-item>
+                <template slot="title"><i class="el-icon-document"></i>病患管理</template>
+                <el-menu-item index="userList">病患列表</el-menu-item>
                 <!--<el-menu-item index="foodList">食品列表</el-menu-item>-->
                 <!--<el-menu-item index="orderList">订单列表</el-menu-item>-->
                 <!--<el-menu-item index="adminList">管理员列表</el-menu-item>-->
               </el-submenu>
-              <!--<el-submenu index="3">-->
-                <!--<template slot="title"><i class="el-icon-plus"></i>分类管理</template>-->
+              <el-submenu index="3">
+                <template slot="title"><i class="el-icon-plus"></i>文章管理</template>
+		<el-menu-item index="contentList">文章列表</el-menu-item>
+		<el-menu-item index="daily">新增文章</el-menu-item>
                 <!--<el-menu-item index="addShop">添加商铺</el-menu-item>-->
                 <!--<el-menu-item index="addGoods">添加商品</el-menu-item>-->
-              <!--</el-submenu>-->
+              </el-submenu>
               <!--<el-submenu index="4">-->
                 <!--<template slot="title"><i class="el-icon-star-on"></i>图表</template>-->
                 <!--<el-menu-item index="visitor">用户分布</el-menu-item>-->
